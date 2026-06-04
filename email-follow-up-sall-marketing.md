@@ -12,14 +12,6 @@ You can walk through the full proposal (story, modules, and pricing summary) her
 
 **[Open the Sall Marketing interactive proposal](https://victorhgutierrez-cloud.github.io/sallmarketing/)**
 
-## US pricing reference (PDF)
-
-Victor shared his **personal US pricing table** on the call for transparency. You can download it here:
-
-**[Sall Marketing — US pricing reference (PDF)](https://victorhgutierrez-cloud.github.io/sallmarketing/Sall-Marketing-Pricing-US.pdf)**
-
-You can also attach this PDF to your internal thread if that is easier for your manager’s review.
-
 ## Pricing from the demo (summary)
 
 | Item | Amount (USD) |
@@ -30,7 +22,7 @@ You can also attach this PDF to your internal thread if that is easier for your 
 
 **Modules in the quoted package:** Core, Time Off, Performance, Trainings, Engagement, Recruitment (5 active jobs), and Expenses (5 users).
 
-**Note:** The PDF above is Victor’s US pricing reference table (not a separate contract). The commercial proposal in the interactive deck reflects the numbers we walked through on the demo.
+**Note:** The interactive proposal reflects the numbers we walked through on the demo. If you need Victor’s full US pricing table for internal review, reply to this email and he will send it as an attachment (not published online).
 
 ## Demo environment
 
