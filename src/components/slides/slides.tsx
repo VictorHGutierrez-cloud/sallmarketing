@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import factorialModulesImg from "@/assets/factorial/factorial-modules.jpg";
 import { ExpandableImage } from "@/components/ui/ImageLightbox";
-import { DEFAULT_VALUES as d } from "@/utils/constants";
+import { DEFAULT_VALUES as d, pricingPdfUrl } from "@/utils/constants";
 import { formatUSD } from "@/utils/formatters";
 
 export interface SlideData {
@@ -303,6 +303,15 @@ export const slides: SlideData[] = [
             </div>
           </div>
         </div>
+        <a
+          href={pricingPdfUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 border border-white/30 px-6 py-3 text-[18px] font-bold hover:bg-white/10"
+        >
+          <FileText size={18} />
+          Download US pricing reference (PDF)
+        </a>
       </div>
     ),
   },

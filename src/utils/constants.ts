@@ -3,6 +3,11 @@
  * Sourced from discovery (Andrew) + product demo (Victor) — transcricao/reuniao.txt.
  */
 
+
+export const pricingPdfPath = "/sallmarketing/Sall-Marketing-Pricing-US.pdf";
+export const pricingPdfUrl =
+  "https://victorhgutierrez-cloud.github.io/sallmarketing/Sall-Marketing-Pricing-US.pdf";
+
 export const DEFAULT_VALUES = {
   empresa: "Sall Marketing",
   legalName: "Sal Marketing Ventures",
