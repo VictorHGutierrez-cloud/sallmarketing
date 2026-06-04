@@ -1,7 +1,6 @@
 import { Fragment, ReactNode } from "react";
 import {
   AlertTriangle,
-  Calendar,
   Check,
   ClipboardList,
   Clock,
@@ -14,7 +13,6 @@ import {
   Sparkles,
   TrendingUp,
   UserPlus,
-  Users,
   Video,
   X,
   Zap,
@@ -354,66 +352,6 @@ export const slides: SlideData[] = [
                 </div>
               </Fragment>
             ))}
-          </div>
-        </div>
-      </div>
-    ),
-  },
-
-  {
-    id: "next-steps",
-    title: "Next steps",
-    summary: "Quote by email · manager decision next week",
-    icon: <Calendar size={24} />,
-    bg: "dark",
-    content: (
-      <div className="flex flex-col justify-center h-full px-[100px]">
-        <SectionLabel>Next steps</SectionLabel>
-        <SlideTitle>Quote today — decision at the beginning of next week</SlideTitle>
-        <div className="grid grid-cols-2 gap-8 mt-4">
-          <div className="space-y-4">
-            {[
-              {
-                step: "1",
-                title: "Proposal & pricing email",
-                body: `Victor sends formal quote (${formatUSD(d.mensalFactorial_USD)}/mo + ${formatUSD(d.implantacaoFactorial_USD)} setup) by end of day for your manager.`,
-              },
-              {
-                step: "2",
-                title: "Internal review with manager",
-                body: "Rikia presents Factorial as preferred vendor — last evaluation, strongest UI and Expenses vs. competitors.",
-              },
-              {
-                step: "3",
-                title: "Go-live phased",
-                body: "Start documents & time off in ~2 weeks while onboarding continues — full rollout within 45 days.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-5 border-l-4 border-primary/80 bg-white/5 border border-white/15 p-6">
-                <span className="text-[32px] font-bold opacity-50 shrink-0">{item.step}</span>
-                <div>
-                  <p className="text-[22px] font-bold mb-1">{item.title}</p>
-                  <p className="text-[18px] font-normal opacity-75">{item.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="border border-white/20 bg-white/5 p-8 flex flex-col justify-center">
-            <p className="text-[18px] font-bold uppercase tracking-widest opacity-70 mb-6">Summary</p>
-            <div className="space-y-5">
-              <div>
-                <p className="text-[16px] font-normal opacity-65">Monthly (after discount)</p>
-                <p className="text-[40px] font-bold">{formatUSD(d.mensalFactorial_USD)}/mo</p>
-              </div>
-              <div>
-                <p className="text-[16px] font-normal opacity-65">Implementation</p>
-                <p className="text-[40px] font-bold">{formatUSD(d.implantacaoFactorial_USD)} one-time</p>
-              </div>
-              <div className="border-t border-white/15 pt-5">
-                <p className="text-[20px] font-bold">{d.vendedor}</p>
-                <p className="text-[16px] font-normal opacity-75">{d.emailVendedor}</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
