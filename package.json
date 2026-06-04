@@ -10,10 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "proposal:generate": "node ./proposal-replicavel/scripts/gerar-proposta.mjs",
-    "proposal:from-transcript": "node ./proposal-replicavel/scripts/gerar-a-partir-transcript.mjs",
-    "proposal:mcp": "node ./proposal-replicavel/mcp/proposal-mcp-server.mjs"
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

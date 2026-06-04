@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Factorial × Dulceria Nacional / Grupo Webcor Design System
+   All colors MUST be HSL.
+   
+   Palette:
+   - Factorial Red (#FF355E): 347 100% 60% — Primary, hero, CTAs
+   - Amber Accent (#FFB940): 37 100% 63% — Warm accents
+   - Teal Accent (#07A2AD): 184 93% 35% — Cool accents, highlights
+*/
+
+@layer base {
+  :root {
+    /* Primary: Factorial Red */
+    --background: 0 0% 100%;
+    --foreground: 347 80% 15%;
+
+    --card: 347 60% 20%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 347 70% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 347 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Deep red-dark for contrast sections */
+    --secondary: 347 50% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 347 30% 25%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 37 100% 63%;
+    --accent-foreground: 347 80% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 347 40% 30%;
+    --input: 347 40% 30%;
+    --ring: 37 100% 63%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --factorial-red: 347 100% 60%;
+    --amber-accent: 37 100% 63%;
+    --teal-accent: 184 93% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-dark {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .section-neutral {
+    @apply bg-secondary text-secondary-foreground;
+  }
+
+  .section-light {
+    @apply bg-background text-foreground;
+  }
+}
