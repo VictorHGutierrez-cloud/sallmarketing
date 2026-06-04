@@ -1,0 +1,399 @@
+054843d3-3e7b-4ee9-bf51-e9e8643a6393
+00:05:26,010 --> 00:05:28,810
+Victor Henrique Aguiar Gutierrez Duarte: thank you
+
+826c399a-1da7-4284-8715-4856021ddb29
+00:06:01,600 --> 00:06:02,840
+Victor Henrique Aguiar Gutierrez Duarte: Hello, Rashid.
+
+015c8d40-f00b-46c0-844f-23667e37396b
+00:06:07,120 --> 00:06:08,120
+Victor Henrique Aguiar Gutierrez Duarte: Can you listen?
+
+e4a9fcdd-925d-4a30-919b-d8c3571f16b3
+00:06:15,660 --> 00:06:16,600
+Victor Henrique Aguiar Gutierrez Duarte: Or me?
+
+5de0d04c-6afc-4f43-b883-da527d7084fe
+00:06:18,060 --> 00:06:18,680
+Rashid Azeem: Or you?
+
+3e1ce1dc-6503-4976-8d83-24f8c4bebff4
+00:06:19,500 --> 00:06:22,560
+Victor Henrique Aguiar Gutierrez Duarte: I'm doing great. Nice to meet you. Good Monday.
+
+a334d930-990e-477a-aa1a-e35d15767329
+00:06:28,740 --> 00:06:32,840
+Victor Henrique Aguiar Gutierrez Duarte: Can you listen to me well? How's my connection, Rashid? Can you listen?
+
+96715aca-81ce-4498-99f7-8f531740b9e4
+00:06:35,020 --> 00:07:00,470
+Victor Henrique Aguiar Gutierrez Duarte: Thank you. So nice to meet you, Rashid. Nice to meet you. I'm Victor for Factory HR, of course. And I sent to you the presentations and I sent to you also the prize. So I would like to ask you, like, since from the beginning, what do you need? How can I help you? It made sense what I shared with you. Made sense or not?
+
+405c2d65-d57a-436a-870b-9430260ad1fa
+00:07:03,690 --> 00:07:52,250
+Rashid Azeem: so basically my company has bunch of employees that have been working remotely and they are from all across the country so we've been using HR system before this and we and we had very bad experience with it because the app version was not good of it and you know the it wasn't creating a proper payroll system and there was a lot of a lot of missing stuff and everything so we dropped that and for past couple of months we've been doing everything manually so now we are just hunting for a new system you know that fits perfectly with our organization and works good fine
+
+b95dd15c-66b4-41d5-a909-37887f275c69
+00:07:54,250 --> 00:08:13,690
+Victor Henrique Aguiar Gutierrez Duarte: Okay, so you had problems with the last provider, but which kind of problems from what I heard and what I read, actually, you have problems with clock in and clock out and shifts and like the time tracking itself. Can you share which kind of problems you had?
+
+65b515cc-d50c-40ef-a2c4-afc288e3b56a
+00:08:14,210 --> 00:08:35,330
+Rashid Azeem: Like whenever we wanted to generate a report, there was a lot of missing stuff in the reports. And as I've told you that My employees are from different areas from this country. So they are mostly remote workers. And so whenever they try to sign in or, you know, it wasn't working fine.
+
+4534eb53-e6a4-470c-8d34-7e39a40a5104
+00:08:37,220 --> 00:08:37,780
+Victor Henrique Aguiar Gutierrez Duarte: Okay.
+
+e0595905-9fad-43b9-9f49-d50f87394eba
+00:08:38,200 --> 00:08:40,500
+Rashid Azeem: Yeah. Okay.
+
+71a9db83-c0e1-4f62-bf22-02f554da4137
+00:08:42,480 --> 00:08:47,980
+Victor Henrique Aguiar Gutierrez Duarte: Okay. Okay. I'm going to close my camera. Go on. Go on. Okay.
+
+8181d3f6-b66b-46e0-bed8-fc516e14a3e7
+00:08:50,670 --> 00:09:16,190
+Victor Henrique Aguiar Gutierrez Duarte: Okay. So now, do you need like just a clock in, clock out system or are you looking for something else? Because Factorial has everything. You can track your shifts, you can sign your documents, you can ask for leaves, seek leaves, time off, pay time off. So what do you need right now? It's just the operational side, like the clock in, the documents. What do you need exactly in a new software?
+
+4d53ebb3-afeb-4f7d-b578-2568b1f9b3f0
+00:09:19,780 --> 00:09:47,800
+Rashid Azeem: so for the startups we want we want to start with the core modules of yours and like it should have you know keeping the employees data your documentation their clock attendance and the management and obviously the payroll system if it it comes in the core modules as well so yeah you know that basic stuff the template for emails and job posting and all that
+
+96faaa16-4d45-4514-9e53-0ec92254186c
+00:09:50,030 --> 00:09:57,310
+Victor Henrique Aguiar Gutierrez Duarte: Oh, so the recruitment, like the recruitment, it's important for you as well, like finding new people, the recruitment.
+
+3a5e0886-fe4d-4701-a110-ba651a88963e
+00:09:57,930 --> 00:10:07,070
+Rashid Azeem: Yeah, it should connect with the, you know, different platforms like Indeed, LinkedIn and fetching the data for them, you know, applicants.
+
+be0bce5d-1a32-4db2-937b-1501f6717bed
+00:10:08,750 --> 00:10:16,970
+Victor Henrique Aguiar Gutierrez Duarte: Okay, perfect. So we integrate with this LinkedIn for Jobs Indeed. It's not a problem for us. Can you see my screen? I started sharing. Can you see?
+
+33d44b06-d294-45c4-8de4-c9f5fa5b0fca
+00:10:17,590 --> 00:10:18,070
+Rashid Azeem: Yes.
+
+c7678c29-c0c2-4dfa-9271-7643c9c14535
+00:10:18,710 --> 00:10:22,850
+Victor Henrique Aguiar Gutierrez Duarte: Oh, finally, you can see my screen because we're not able to pass. Thanks.
+
+741e89d5-8780-43b3-a448-edf5ed8fb04e
+00:10:23,790 --> 00:10:35,850
+Rashid Azeem: So we had a bad internet problem. It was all around the world. I had another meeting that day and that good lady has a bad network as well. So it was not only me.
+
+2f73e42b-74e8-4115-81c2-e58174f94bc1
+00:10:36,990 --> 00:11:14,110
+Victor Henrique Aguiar Gutierrez Duarte: I think something's happening with the world because like the past week here in Barcelona, we had a lot of problems with the internet as well. So I'm not sure what's going on. but but let's go so okay the recruitment side i can share with you and after that the documentation signing documents sending documents and like we have these documents on the cloud i can i can do this we can type tracking so i can clock in i can clock out and you have a remote worker so in this case we are going to clock in with the mobile device make sense to you clock in and clock out for the device
+
+f5c1e6d1-8310-4c9b-8d8c-b517a2c853fc
+00:11:18,720 --> 00:11:23,320
+Rashid Azeem: No, we will use it on application. Do you have the application version of this?
+
+0c5fce21-5351-44b6-a3bd-f518fc155b60
+00:11:25,070 --> 00:11:43,810
+Victor Henrique Aguiar Gutierrez Duarte: We have the application. The application, it's a mobile application in the cell phone of the employee. So you have this version that is the computer that you're seeing right now. Of course, I can clock in, I can clock out in my computer, but you also have the application on the smartphone. So it's quite the same.
+
+93f28b40-0f66-49e6-a7b3-e79e78032996
+00:11:44,130 --> 00:11:56,360
+Rashid Azeem: Yeah, that will work for the employees. They work remotely, so they cannot use a machine or something like that. So we'll go with the application, mobile application. application perfect
+
+74c8ed25-d603-4fd1-8b6e-7393a0057078
+00:11:56,650 --> 00:12:39,280
+Victor Henrique Aguiar Gutierrez Duarte: that's it and also in in their mobile devices they will be able to request of course the time off the absences we track the time off as well so in this case we are talking about all the operational side of factorial so i can clock in i can clock out i can ask for extra hours bank of hours and of course i have this So I ask for my leaves. I have your leaves. You put it here, the description, the date range, and you're sent to approval. This approval could arrive to the manager, could arrive to the HR. So we have instances of the approvers here. So far, so good. Make sense to you?
+
+430b5b03-7e89-4257-86e9-06271b5e4920
+00:12:40,200 --> 00:12:41,640
+Rashid Azeem: Yes, yes. Carry on.
+
+939d1bab-a181-484e-87b1-1d329c721ed6
+00:12:42,860 --> 00:13:28,970
+Victor Henrique Aguiar Gutierrez Duarte: Perfect. So, okay. When it comes about reports, We have the real-time reports here where I can see my sheets, of course. I don't have any sheets. I can, of course, add some here. But if you want a report for the total errors of your team, of your company, of course, you can bring this. So first of all, you can download. here in an excel in a pdf version the time tracking okay it's it's it's a way to see or you can ask our ai factor is the only company that has this agent ai so how many extra hours i had on my company in the past three months so we can make something like that
+
+2b1bc42e-7c24-4de2-8d57-dbfd39a348cc
+00:13:29,930 --> 00:13:30,510
+Rashid Azeem: Okay.
+
+d493c481-4cee-428d-ba04-c5748481ed20
+00:13:31,410 --> 00:13:34,830
+Victor Henrique Aguiar Gutierrez Duarte: And we'll give these reports for you. This AI is company-specific.
+
+4a49ecd8-e34e-45d8-b393-813aa47d4b3a
+00:13:34,910 --> 00:13:40,290
+Rashid Azeem: It would be a company-specific AI or just general information about HR systems?
+
+afc33088-f411-4d61-b205-3086ebbe5ee9
+00:13:41,720 --> 00:14:23,080
+Victor Henrique Aguiar Gutierrez Duarte: That's an awesome question, actually. So, Factorial has its own AI that is embedded on Factorial. So, everything that you have inside Factorial will be able to discuss, to ask, to generate reports. So, it's like a secure AI because it only works with your data. It's not outside. So, your employee can ask something like... I don't know my time off policies, when can I leave, when I cannot, these kind of things. Oh, what about my benefits? So your employee can also ask here everything about the company. And you can create reports as well.
+
+b05cee2d-c6bf-455b-b2bd-27599790629e
+00:14:25,950 --> 00:15:44,760
+Victor Henrique Aguiar Gutierrez Duarte: So far so good? Let's go. Signing documents and these kind of things, documents related, you need as well. Right, Rashid? So I'm going to show you. quickly here, you can send documents in bulk. You can send a lot of documents with one click and you can distribute this. You can also use the fillable PDFs where you can write inside of the PDF as well. And all the signatures they have, they are legally enforced, so it's okay. in case you're going to an audit trail you'll be covered with perfect okay so this is the the toughest part i think is the time tracking the documents etc i can show you the equipment it's pretty basic so all these vacancies here's this job's position here they will connect of course with linkedin indeed and etc the good thing is um you can also have your proper landing page so you can create your landing page for your company and you can send the url as well so let me share with you how this looks like
+
+5fbad33a-a911-4dda-8e5d-ebe5bb6a0d44
+00:15:47,310 --> 00:16:36,130
+Victor Henrique Aguiar Gutierrez Duarte: So we have here the vacancy that your position, you can tailor with your colors, with your, it's your desire. So you can change this the way you want. And if some candidates, they don't come through LinkedIn. So you have this landing page where you can share in WhatsApp, in Facebook. It's a URL. So you can share this with anyone. And the good thing is we don't have to log in here as a candidate. I don't have to put my email here and log in after that, subscribing to the position. No, it's direct. So here I can answer these questions. You can tailor these questions, of course. And after I put here, I will appear here on the recruitment site. What can I do? Any questions so far, Rashid?
+
+750e1a9a-9617-455a-911e-ffa906e549f5
+00:16:37,070 --> 00:16:37,730
+Rashid Azeem: No, no.
+
+cfe1b00c-ada5-480a-a3f0-4a7043ee25f6
+00:16:38,250 --> 00:17:09,910
+Victor Henrique Aguiar Gutierrez Duarte: Okay. That's it. Okay. We just received the resume, the curriculum here. We have an AI that, of course, will help you in summarize this thing if Diana is a good or a bad candidate for the position. And the communication with Diana could be done with email inside Factorial. You can write an email here. Hey, welcome. It's nice to have you in our position, et cetera, et cetera. And you can also send a WhatsApp. Do you use WhatsApp in Pakistan or not?
+
+df4603a5-f440-4cff-8130-37549f1a9d02
+00:17:11,150 --> 00:17:13,310
+Rashid Azeem: yes we do like
+
+4cd6123b-2175-4e95-a826-eef3c9349b59
+00:17:13,310 --> 00:18:07,640
+Victor Henrique Aguiar Gutierrez Duarte: in brazil so this feature of whatsapp is very interesting for countries like us like mine and yours and you can send emails you can send whatsapp and you can call as well so this is the communication that we can do with diana if diana has like a phase with his manager or manager you can move to the phase and your manager can enter on the processes and start like doing his questions, and doing the assessment himself. So you can put your managers here. After that, you can move to the phase of a hire, and you can send the offer letter inside Factorial. So you send the offer letter, you get the signature, and you can enroll, and you can start the onboarding processes. So what I'm doing here, I'm leaving the recruitment, I just hired this person, and now I have an onboarding flow. Makes sense to you, the onboarding flow?
+
+95c485c5-6cca-4d58-8316-92253eab25e8
+00:18:08,230 --> 00:18:09,430
+Rashid Azeem: Yes. Okay.
+
+dfc0e1aa-c288-4c03-aef6-02aff837c7c2
+00:18:12,070 --> 00:19:02,700
+Victor Henrique Aguiar Gutierrez Duarte: Here you have the pending task for the new orders and you can do the configuration for a lot of different things. First of all, you can send a link to the new candidate to fill the personal information. So general information, address, physical residence, emergency contact, you can send this to the new candidate. You can now also send videos and documents like your company's best practices and stuff. So you can send documents to them as well, videos and documents. And of course, you can request a file upload. So you can request that your new candidate like to put the documents on the desired base. Makes sense to you? In the folders? So your new hire has to put in IDs, his ID.
+
+9c6be3c2-b07d-461d-85e2-a805bb60bd24
+00:19:05,600 --> 00:19:17,520
+Victor Henrique Aguiar Gutierrez Duarte: upload your ID. So he will receive this task and he'll be able to put the document inside the desired folder. So far, so good?
+
+b0a871f2-e6bd-431d-871d-c70be8605928
+00:19:19,110 --> 00:19:20,250
+Rashid Azeem: Yes, carry on.
+
+eaf3f3dc-3c42-42a3-80a1-9ac0e09bfd2d
+00:19:20,950 --> 00:19:41,050
+Victor Henrique Aguiar Gutierrez Duarte: Good. Perfect. Good. So after that, of course, after the onboarding, your employee can start doing the things that they had to do, like clock in, clock out, asking time off, requesting time off, and et cetera. So that's how it looks, a normal onboarding flow in Factoria since the recruitment.
+
+9b794df0-9ce4-4154-9046-4e87d5cf5dda
+00:19:42,550 --> 00:19:45,750
+Rashid Azeem: So these are just four modules of yours?
+
+7f0f0c86-5c55-4af7-8a84-6da7cdf7a61d
+00:19:47,900 --> 00:20:12,240
+Victor Henrique Aguiar Gutierrez Duarte: Yeah. Actually, the core, let me bring back my camera. So the core here, it's documents and onboarding. It's the first model. Every client of Factorial needs this model. It's the zero one. And after that, you can start purchasing recruitment. You can start purchasing the time off, the time tracking. So we work this like modulus. We have 15 modulus. You can start like this.
+
+2d90e22e-11f2-4385-acd4-e249abf70eeb
+00:20:12,880 --> 00:20:16,780
+Rashid Azeem: So you charge per employee or per module?
+
+9776b607-0a91-46d0-9566-faa6e4e216fb
+00:20:17,920 --> 00:20:47,580
+Victor Henrique Aguiar Gutierrez Duarte: Per employee. Just the recruitment side, that is like, it doesn't matter how many employees you have. It's a fixed price for the recruitment. The only question that I need to ask you, how many job positions you have, like open? Five, 10, 15? How many positions? Employees? No, open positions. How many open positions do we have? Like five new positions every month, each month?
+
+3f2973da-35f3-4bd7-8077-af07cdd09c8f
+00:20:48,200 --> 00:20:53,420
+Rashid Azeem: Yeah, around three, four, five, the normal setup. It's not that big.
+
+eaf8c18c-d6b3-4941-ad52-e8a4081ff7a0
+00:20:54,280 --> 00:21:25,480
+Victor Henrique Aguiar Gutierrez Duarte: Okay. Makes sense. So, like, we can use the cheapest model here of the recruitment because it just needs five. It's okay. Perfect. After that, we have the performance evaluation. We have the surveys. We have the trainings. Are you interested in any of these modules of factorial? It's more like a personal development. We were talking about the operational side and now we have this, the performance evaluation and etc. Are you interested in this as well?
+
+02e7544b-7a10-484d-8c42-0df66ca18e57
+00:21:27,550 --> 00:21:31,550
+Rashid Azeem: What about that payroll system? Do you have them?
+
+54708a7d-bf54-43a7-b0a3-845c6f863f01
+00:21:32,730 --> 00:22:30,210
+Victor Henrique Aguiar Gutierrez Duarte: Actually, we don't have, we don't process the payroll, but we cover all the data that you need to send to your payroll provider. Okay, so the extra hours, the time off, the absences, all the things that composes the payroll, we have here, but we don't process it. We have the salaries, we have the extra compensations, we have these extra hours, but no. we don't process the payroll are you looking for a complete system in this case yeah you need you need the payroll like in the same platform like working with policies and you're not generating play-paste links and create a payroll system Okay, yeah. In this case, we don't generate the payslips, but we cover everything before and you can download the report with the extra hours of the stuff and put in a spreadsheet in another payroll provider. But yeah, we don't cover the site, Hashid.
+
+723bc7dd-9e3a-48eb-89e0-bb93a229c35c
+00:22:32,470 --> 00:22:41,650
+Victor Henrique Aguiar Gutierrez Duarte: This is a deal split for you. You need both or are you open to use Factora for everything else and hiring another payroll provider?
+
+33bd3136-de90-4a42-82f3-9791cc7d70cb
+00:22:43,830 --> 00:23:01,790
+Rashid Azeem: For us, it depends, like, if we get the tutorial now with the core modules covering all the HR, except for the payroll system. So we can, you know, integrate another system with this. Do you have any, you know, collaboratives which we can integrate with your system?
+
+3363c94b-8e17-4a32-8a30-e3cf4a985fdd
+00:23:02,630 --> 00:23:41,860
+Victor Henrique Aguiar Gutierrez Duarte: Yes, we integrate with Primavera, with Sage as well, with SAP SuccessFactors, with Microsoft 365. We integrate with different payroll providers. But if you have a payroll provider that is your own, we can create a report. When you download here, we'll try to match exactly the columns and the rows for your report. So here we can create a report for you from scratch with name, a mouth, seek a leaf, extra hours. You can create a spreadsheet trying to match the layout that any of the payroll provider has.
+
+93206796-efd1-46d5-aaac-a000d052018d
+00:23:43,360 --> 00:23:50,620
+Rashid Azeem: Okay, so what's the process, you know, the implementation process and how the, you know, payment circle works here?
+
+95e945b9-c689-40e9-807b-d557adbefdb5
+00:23:51,780 --> 00:24:35,090
+Victor Henrique Aguiar Gutierrez Duarte: Perfect. You can pay by credit card or bank transfer in US dollars or in euros. We can discuss this later. The onboarding process says, I think that for your case, five hours of implementation would be good. It's everything that we need. So we will start online meetings with you to onboard, to implement the system. And after that, after you finish the onboarding process, you have an account manager that will follow you through. the entire lifecycle with factorial. So we have two people working for you since the beginning. The onboarding specialist, they will solve your questions, will help you implement the system. And after that, you have an account manager to help you with this. Make sense to you?
+
+46d3a395-bb3c-4323-87e8-e86fda17c0a6
+00:24:37,350 --> 00:24:43,890
+Rashid Azeem: Okay. So how the app version looks? Do you have here? Can you show me how the app looks?
+
+12d50329-072c-43db-a75d-dddcc1fa2853
+00:24:44,570 --> 00:24:49,350
+Victor Henrique Aguiar Gutierrez Duarte: Of course. Let me enter here.
+
+526595ed-728e-429e-b873-52c52612df13
+00:24:55,630 --> 00:24:56,490
+Victor Henrique Aguiar Gutierrez Duarte: There's a sec.
+
+2de99eea-2e65-4b3a-8b11-f4f84b765ef5
+00:25:00,050 --> 00:25:01,710
+Rashid Azeem: And where is this company based?
+
+efc2be69-4564-4e17-8ca4-a329d5acf9a4
+00:25:03,070 --> 00:26:16,150
+Victor Henrique Aguiar Gutierrez Duarte: In Barcelona, Rachid. We are based on Spain. No, no, it's a Spanish company. But we work in, we have business in more than 60 countries. Actually, we have work, we have business in Pakistan as well. So it's a startup that became a unicorn in the market. And now, like, we work with less than 60 countries. All the Europe, Africa. brazil united states pakistan as well africa angola okay so do you have that uh what it called the geonavigation geo and we get like a lockout Yeah, yeah, we have the geofencing, right? Like the fence that you put. Okay, we have, but in order to work this, look, you have to say, this employee, Victor, works in this place, and Hashid works in that place. So we will, like, bring a 50 meters fence. If they try to clock in away from, like, 50 meters, they'll not be able to do this. That's how we make this.
+
+7728f90a-8c40-41bc-a9a4-fdfb7b94c663
+00:26:20,290 --> 00:26:20,730
+Rashid Azeem: Sorry?
+
+d238912e-cee3-4274-b43e-ad0d2a33dcab
+00:26:21,430 --> 00:26:22,250
+Victor Henrique Aguiar Gutierrez Duarte: Sorry, Hashid.
+
+4979ad48-214d-4d1f-9a9d-5a67b98a6ea6
+00:26:22,950 --> 00:26:26,550
+Rashid Azeem: It comes with the clock in, clock out module or it's a separate module?
+
+07d6db43-b0d5-4733-b0df-27460c84cc0d
+00:26:27,310 --> 00:26:37,510
+Victor Henrique Aguiar Gutierrez Duarte: No, no, no, no. It comes together. It comes together. Don't worry. It's the same price. Okay. Let me share this, my screen with you. But it's
+
+f7dea1e3-6ee5-4452-bd56-0d6577c017e9
+00:26:41,290 --> 00:26:43,730
+Victor Henrique Aguiar Gutierrez Duarte: in Portuguese, but I'll try to guide you. Okay.
+
+7bc90330-d216-4414-9528-1aea8b6d68ac
+00:26:47,770 --> 00:26:49,070
+Victor Henrique Aguiar Gutierrez Duarte: So let's go.
+
+a95beace-6c36-4da5-9d25-6daef99d8029
+00:26:49,630 --> 00:26:51,450
+Rashid Azeem: The implementation on this.
+
+8404efea-b53c-46b0-aa47-29102194be6b
+00:26:52,210 --> 00:26:52,990
+Victor Henrique Aguiar Gutierrez Duarte: Sorry, Hashid.
+
+1a30254a-cc74-4ac0-9e34-e431eb862e46
+00:26:54,640 --> 00:26:57,060
+Rashid Azeem: implementation cost I'm
+
+453b6a06-bb72-4666-961a-bfdfd6c2eb0b
+00:26:57,440 --> 00:27:40,220
+Victor Henrique Aguiar Gutierrez Duarte: gonna like it's the same price as the first monthly fee so I think to you the price is more or less like five dollars or actually half of that we have to multiply this for the total number of employees and we have probably the same number as the onboarding you know so it's quite the same price if your monthly fee is like probably will have this onboarding like at the same price and we will not charge twice first we charge the onboarding like let's suppose this month we charge onboarding now and like in the last day of the next month we can be flexible on this you start paying the monthly subscription so that doesn't getting like too heavy for you to pay
+
+099de7d3-9eec-4084-8a01-7c625d80408e
+00:27:43,140 --> 00:27:53,040
+Victor Henrique Aguiar Gutierrez Duarte: okay so for the onboarding fee it's a single payment and after that we start paying the monthly subscription okay in the next month can you see my screen here yes
+
+aaf94c27-8a5d-4bc2-b156-d30f1bfde1fd
+00:27:53,040 --> 00:27:53,560
+Rashid Azeem: yes i can
+
+eb882299-928c-47da-bce8-0e68076fcbd9
+00:27:55,020 --> 00:28:23,920
+Victor Henrique Aguiar Gutierrez Duarte: First thing, okay, this communication tab, you can create posts, whatever, events, it makes part of your plan as well. So I can see the birthdays, I can see the new joiners, and I can see the latest news that we have in the company, okay? If I have, like, Rashid sent me a document to sign, Rashid sent me an engagement survey to fill, all these kind of things will appear here on the inbox. Oh, I have to fill a document. Let's see how can I do this.
+
+e4808db7-5f71-438e-abc2-4d0e308b4e96
+00:28:27,110 --> 00:28:33,990
+Victor Henrique Aguiar Gutierrez Duarte: Everything that I need to do for Factorial as an employee, I can do here inside my mobile. I don't need to open the desktop.
+
+b1efd54c-6e56-4212-9bde-f28b274e946b
+00:28:35,560 --> 00:28:37,320
+Rashid Azeem: Okay. This is for employees.
+
+3c37f5d4-42cb-4432-944f-926f0de90e07
+00:28:37,920 --> 00:30:24,070
+Victor Henrique Aguiar Gutierrez Duarte: And for managers and for everyone. We don't have differences on manager licenses or common licenses because we can make this with permissions. So everyone has the same login, but we'll break this down with permissions. So Hashid is the owner, is the HR manager. Hashid will be able to see all the employees' data. But no, I'm an employee. I can see your data because I'm not a manager. So that's how we do it. So we can send documents here, service as well. Here I have the calendar. I can see who's out of office. And of course, in this case, I can request. So let's go. My time tracking is here. I can see. My shifts, if I clock in or clock out. In this case, I don't make this in factorial, but you can see here. To ask for some absences or time off or anything related to this, I can go here. I can search. Like, seek leave. Hey, boss, I'm a sick leave. This is the information. You can put the information here. And we can make this not optional. But you have to bring a document. to seek leaves. So we make this mandatory. So for Ciclips, you need to put a document or you won't be able to request it. So that's it for the point of the employee. Everything that has to do is clock in and clock out. I can do this, of course. I can see my communication. I can see the calendar. I can see my tasks. If you have a task of this, of that, I can see my tasks here, my onboarding tasks.
+
+af8ffcea-18ee-4364-b8a5-e71b6677e4a8
+00:30:26,190 --> 00:30:54,190
+Victor Henrique Aguiar Gutierrez Duarte: I have different things here because we have the entire factorial. I can see my evaluation, my performance evaluation here. So I can feel surveys. So in your case, I don't think we need this right now, but probably we can involve with you. And as the time goes by, we will add more modules and et cetera. But it's like this, Rashid. Nothing different, nothing difficult. Did you get it? It's clear to you.
+
+0b2a019d-7ace-4414-822d-f8228045fe4c
+00:30:57,260 --> 00:30:58,720
+Rashid Azeem: Yes, it's clear.
+
+f2fb85d3-9cf8-4c76-b796-6a421586fac2
+00:30:59,870 --> 00:31:01,850
+Victor Henrique Aguiar Gutierrez Duarte: Anything else that you need to see?
+
+f777f123-8def-45b8-835b-5d24966e90e5
+00:31:04,530 --> 00:31:35,590
+Rashid Azeem: We are just like a couple of local systems and a couple of international systems and I would like you to give me quotation you know proper quotation for 35 employees like for the core module you provide for them and what's gonna cost us like for the 30 employees 35 employees again 35
+
+2d6bb469-dff1-48c2-b380-7d4c93c872dc
+00:31:35,590 --> 00:31:36,250
+Victor Henrique Aguiar Gutierrez Duarte: okay
+
+6b107dd9-9fd3-4294-bc96-647070070637
+00:31:38,860 --> 00:31:52,260
+Rashid Azeem: and so it's going to be you know the procedure like implementation procedure and all that so just just give me a petition and I'll discuss it with my boss and my HR team and then
+
+b25e37d0-7692-4add-907b-994e39770305
+00:31:57,880 --> 00:32:14,060
+Victor Henrique Aguiar Gutierrez Duarte: Perfect. Perfect. So just a quick question about this. Are you searching for a platform like for this month when you plan to start? Hey, Victor, I need to have this to implement it like by the end of June. Like how hurry are you right now for like finding a new platform?
+
+396f1952-881f-44e9-a46d-511ac7bd76a6
+00:32:15,770 --> 00:32:29,550
+Rashid Azeem: there's not a you know specific time frame for us we did yes we just hunting a good system and if we find found one and then we'll go for the implementation that's it this
+
+4b6da2b4-5114-4b45-a6a3-e6008c90d1ee
+00:32:29,550 --> 00:32:30,170
+Victor Henrique Aguiar Gutierrez Duarte: is not a
+
+805040ed-e5f6-472e-a0aa-1852c8ecc800
+00:32:30,170 --> 00:32:31,530
+Rashid Azeem: specific time frame for this
+
+98fe0655-1fad-4569-b645-0e8e38a25f96
+00:32:32,700 --> 00:32:52,300
+Victor Henrique Aguiar Gutierrez Duarte: Okay, you still have some problems with the actual platform, but you can work with this. Okay, makes sense. In this case, I think that you'll be interested on our discount. Like I told you, we have a special discount for non-profit organizations. You are a non-profit organization, right?
+
+2c9f5a15-b235-43b4-bc2f-f828015981bf
+00:32:53,020 --> 00:32:53,480
+Rashid Azeem: Yeah, yeah.
+
+26b46da9-20f0-4e57-a80f-b021e5b3eccc
+00:32:54,860 --> 00:33:11,050
+Victor Henrique Aguiar Gutierrez Duarte: That's it. Our price is half of our normal price. just because we have this this project with non-profit organizations so i think that probably the price will not be the problem here but i'll just give
+
+268b1fe5-eea2-4ed7-aafe-934a24cedd91
+00:33:12,080 --> 00:33:29,970
+Rashid Azeem: me the quotation for this like how much you're gonna discount and how much it's gonna cost us you know to implement the whole system the core modules and for the 35 employees and then i'll discuss it with my team and then we'll proceed forward
+
+f0dfb7f7-212d-40f1-8d1e-f9e49439907c
+00:33:31,830 --> 00:33:51,470
+Victor Henrique Aguiar Gutierrez Duarte: So I'm gonna say to you like by the end of this day or maximum tomorrow morning and do you think we can like chat in the next week just to see how the proposal was like receive it. Can I like nudge you on the next week? A 15-minute call, 10-minute call, something really fast.
+
+8fb136e7-0acb-432b-a48a-9e3c5b849706
+00:33:52,530 --> 00:34:20,760
+Rashid Azeem: No problem, we will connect on this. Actually my boss is out of country right now. I'm hoping he will be returning this week, I guess. So, yeah, I'll have a meeting with him and then we'll decide. So next week would be good. And if we wanted to go with you, Factorial, then I'll myself connect with you. I'll message you myself and then we'll go forward.
+
+12a31b67-f886-43d3-84ed-574ab7ffbae0
+00:34:21,219 --> 00:34:30,139
+Victor Henrique Aguiar Gutierrez Duarte: Perfect. Perfect. Got you 100%. So my name is to give you this proposal. so that's it if you don't have any kind of questions i'm good to go
+
+5bef39cc-fe0c-4564-ab28-03b73b6db0a1
+00:34:30,530 --> 00:34:35,670
+Rashid Azeem: yeah yeah just just uh proposal or petition for this thing
+
+0f7a75b9-eb25-45d3-b164-1f7a801030cd
+00:34:35,670 --> 00:34:42,130
+Victor Henrique Aguiar Gutierrez Duarte: okay okay done so anything that you need just call me on whatsapp okay sure
+
+b2c94bec-efae-4ef4-9b46-347a4aee6b57
+00:34:42,130 --> 00:34:43,570
+Rashid Azeem: sure thank you okay
+
+c868fadd-6c12-48b5-b9c3-16b4236a695f
+00:34:43,570 --> 00:34:45,469
+Victor Henrique Aguiar Gutierrez Duarte: thank you have a great day very
+
+708927c0-4025-443a-a864-8fd185d01daf
+00:34:45,469 --> 00:34:46,710
+Rashid Azeem: much have a great day
