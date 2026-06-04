@@ -2,7 +2,7 @@
 
 **Subject:** Sall Marketing — interactive proposal, US pricing reference, and next steps
 
-Hi Andrew and Rikia,
+Hi Rikia,
 
 Thank you again for your time on our call. As promised, here is everything in one place so your team can review before your decision early next week.
 
