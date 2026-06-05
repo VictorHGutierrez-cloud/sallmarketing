@@ -21,8 +21,8 @@ const Landing = () => {
             className="border border-border/80 bg-white shadow-sm"
             items={[
               {
-                name: "Enter proposal",
-                detail: "Topics on the left · slide opens in a floating panel",
+                name: "Access proposal",
+                detail: "",
                 logo: <LayoutGrid className="h-5 w-5" />,
                 accent: slidePillAccent(0),
                 onClick: () => navigate("/proposta"),

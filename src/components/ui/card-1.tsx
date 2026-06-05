@@ -73,9 +73,11 @@ function PillCardRow({ item, theme }: { item: PillCardItem; theme: "dark" | "lig
       </div>
       <div className="min-w-0 flex-1 text-left">
         <p className={cn("font-semibold truncate", onDark ? "text-white" : "text-foreground")}>{item.name}</p>
-        <p className={cn("text-sm line-clamp-2 leading-snug", onDark ? "text-white/70" : "text-muted-foreground")}>
-          {item.detail}
-        </p>
+        {item.detail ? (
+          <p className={cn("text-sm line-clamp-2 leading-snug", onDark ? "text-white/70" : "text-muted-foreground")}>
+            {item.detail}
+          </p>
+        ) : null}
       </div>
       <ArrowUpRight
         className={cn(
