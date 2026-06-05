@@ -1,19 +1,51 @@
 import { useState, useEffect } from "react";
-import { BarChart3, LineChart, PieChart, Users, Wallet } from "lucide-react";
+import { BarChart3, ClipboardList, DollarSign, LineChart, Sparkles, UserPlus } from "lucide-react";
 import { ColorfulPillCardsGrid, slidePillAccent } from "@/components/ui/card-1";
 import { LightboxOverlay } from "@/components/ui/ImageLightbox";
-import reportRotatividade from "@/assets/reports/report-rotatividade.png";
-import reportDesempenho from "@/assets/reports/report-desempenho.png";
-import reportAusencias from "@/assets/reports/report-ausencias.png";
-import reportFuncionarios from "@/assets/reports/report-funcionarios.png";
-import reportFolha from "@/assets/reports/report-folha.png";
+import reportCostControl from "@/assets/reports/report-cost-control.png";
+import reportExpenses from "@/assets/reports/report-expenses.png";
+import reportRecruitment from "@/assets/reports/report-recruitment.png";
+import reportRecruitmentOne from "@/assets/reports/report-recruitment-one.png";
+import reportTraining from "@/assets/reports/report-training.png";
+import reportPeopleManagement from "@/assets/reports/report-people-management.png";
 
 const REPORTS = [
-  { src: reportRotatividade, title: "Turnover & retention", category: "People analytics", icon: <LineChart className="h-5 w-5" /> },
-  { src: reportDesempenho, title: "Performance", category: "Performance", icon: <BarChart3 className="h-5 w-5" /> },
-  { src: reportAusencias, title: "Absences", category: "HR operations", icon: <PieChart className="h-5 w-5" /> },
-  { src: reportFuncionarios, title: "Employees", category: "HR operations", icon: <Users className="h-5 w-5" /> },
-  { src: reportFolha, title: "Payroll management", category: "Payroll", icon: <Wallet className="h-5 w-5" /> },
+  {
+    src: reportCostControl,
+    title: "Cost control",
+    category: "Workspace analytics",
+    icon: <LineChart className="h-5 w-5" />,
+  },
+  {
+    src: reportExpenses,
+    title: "Expenses",
+    category: "Spending · 5 users",
+    icon: <DollarSign className="h-5 w-5" />,
+  },
+  {
+    src: reportRecruitment,
+    title: "Recruitment funnel",
+    category: "ATS pipeline",
+    icon: <UserPlus className="h-5 w-5" />,
+  },
+  {
+    src: reportRecruitmentOne,
+    title: "Recruitment ONE",
+    category: "Factorial One",
+    icon: <Sparkles className="h-5 w-5" />,
+  },
+  {
+    src: reportTraining,
+    title: "Training",
+    category: "Onboarding paths",
+    icon: <ClipboardList className="h-5 w-5" />,
+  },
+  {
+    src: reportPeopleManagement,
+    title: "People management",
+    category: "HR analytics",
+    icon: <BarChart3 className="h-5 w-5" />,
+  },
 ];
 
 export function ReportsGallery() {
@@ -42,7 +74,6 @@ export function ReportsGallery() {
   return (
     <>
       <ColorfulPillCardsGrid
-        title="Managerial reports"
         theme="light"
         columns={2}
         className="mt-2 max-w-[1000px]"
@@ -51,8 +82,8 @@ export function ReportsGallery() {
       <ColorfulPillCardsGrid
         theme="light"
         columns={2}
-        className="mt-4 max-w-[680px] mx-auto"
-        items={toItems(REPORTS.slice(3, 5), 3)}
+        className="mt-4 max-w-[1000px]"
+        items={toItems(REPORTS.slice(3, 6), 3)}
       />
 
       {openReport && (

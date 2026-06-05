@@ -1,6 +1,7 @@
 import { Fragment, ReactNode } from "react";
 import {
   AlertTriangle,
+  BarChart3,
   Check,
   ClipboardList,
   Clock,
@@ -19,6 +20,7 @@ import {
 } from "lucide-react";
 import factorialModulesImg from "@/assets/factorial/factorial-modules.jpg";
 import { ExpandableImage } from "@/components/ui/ImageLightbox";
+import { ReportsGallery } from "@/components/slides/ReportsGallery";
 import { DEFAULT_VALUES as d } from "@/utils/constants";
 import { formatUSD } from "@/utils/formatters";
 
@@ -354,6 +356,25 @@ export const slides: SlideData[] = [
             ))}
           </div>
         </div>
+      </div>
+    ),
+  },
+
+  {
+    id: "reports",
+    title: "Reports & analytics",
+    summary: "6 live dashboards · click to expand",
+    icon: <BarChart3 size={24} />,
+    bg: "light",
+    content: (
+      <div className="flex flex-col justify-center h-full px-[100px] py-[60px]">
+        <SectionLabel>Reports & analytics</SectionLabel>
+        <SlideTitle light>Live dashboards — not another spreadsheet</SlideTitle>
+        <p className="text-[22px] font-normal text-foreground/75 mb-8 max-w-[1100px]">
+          Replace Google Sheets with real-time views — recruitment, expenses, training, and people data in one place.
+          Click any report to expand.
+        </p>
+        <ReportsGallery />
       </div>
     ),
   },
