@@ -21,9 +21,9 @@ class Particle {
   acc: Vector2D = { x: 0, y: 0 };
   target: Vector2D = { x: 0, y: 0 };
 
-  closeEnoughTarget = 100;
+  closeEnoughTarget = 140;
   maxSpeed = 1.0;
-  maxForce = 0.1;
+  maxForce = 0.08;
   particleSize = 10;
   isKilled = false;
 
@@ -128,7 +128,7 @@ export interface ParticleTextEffectProps {
   className?: string;
   /** Light = white landing page; dark = black demo style */
   theme?: "light" | "dark";
-  /** Cycle interval in frames at ~60fps (240 ≈ 4s) */
+  /** Cycle interval in frames at ~60fps (400 ≈ 6.5s) */
   wordIntervalFrames?: number;
   interactive?: boolean;
 }
@@ -142,7 +142,7 @@ export function ParticleTextEffect({
   words = SALL_MARKETING_PARTICLE_WORDS,
   className,
   theme = "light",
-  wordIntervalFrames = 240,
+  wordIntervalFrames = 400,
   interactive = false,
 }: ParticleTextEffectProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -159,7 +159,7 @@ export function ParticleTextEffect({
   const drawAsPoints = true;
   const isLight = theme === "light";
   const fadeColor = isLight ? { r: 255, g: 255, b: 255 } : { r: 0, g: 0, b: 0 };
-  const trailColor = isLight ? "rgba(255, 255, 255, 0.35)" : "rgba(0, 0, 0, 0.12)";
+  const trailColor = isLight ? "rgba(255, 255, 255, 0.22)" : "rgba(0, 0, 0, 0.08)";
 
   const generateRandomPos = useCallback((x: number, y: number, mag: number): Vector2D => {
     const randomX = Math.random() * 1000;
@@ -230,10 +230,10 @@ export function ParticleTextEffect({
             const randomPos = generateRandomPos(canvas.width / 2, canvas.height / 2, (canvas.width + canvas.height) / 2);
             particle.pos.x = randomPos.x;
             particle.pos.y = randomPos.y;
-            particle.maxSpeed = Math.random() * 6 + 4;
-            particle.maxForce = particle.maxSpeed * 0.05;
+            particle.maxSpeed = Math.random() * 2.5 + 2;
+            particle.maxForce = particle.maxSpeed * 0.04;
             particle.particleSize = Math.random() * 5 + 4;
-            particle.colorBlendRate = Math.random() * 0.0275 + 0.0025;
+            particle.colorBlendRate = Math.random() * 0.015 + 0.0015;
             particles.push(particle);
           }
 
