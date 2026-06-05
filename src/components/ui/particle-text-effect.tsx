@@ -123,13 +123,27 @@ class Particle {
   }
 }
 
+function areParticlesSettled(particles: Particle[], threshold = 0.82): boolean {
+  const active = particles.filter((p) => !p.isKilled);
+  if (active.length === 0) return true;
+
+  const settled = active.filter((p) => {
+    const distance = Math.hypot(p.pos.x - p.target.x, p.pos.y - p.target.y);
+    return distance < 28;
+  });
+
+  return settled.length / active.length >= threshold;
+}
+
 export interface ParticleTextEffectProps {
   words?: string[];
   className?: string;
   /** Light = white landing page; dark = black demo style */
   theme?: "light" | "dark";
-  /** Cycle interval in frames at ~60fps (400 ≈ 6.5s) */
+  /** Max frames before forcing the next word (~60fps). 1500 ≈ 25s safety cap */
   wordIntervalFrames?: number;
+  /** Frames to hold the word after particles settle. 480 ≈ 8s readable pause */
+  wordHoldFrames?: number;
   interactive?: boolean;
 }
 
@@ -142,7 +156,8 @@ export function ParticleTextEffect({
   words = SALL_MARKETING_PARTICLE_WORDS,
   className,
   theme = "light",
-  wordIntervalFrames = 400,
+  wordIntervalFrames = 1500,
+  wordHoldFrames = 480,
   interactive = false,
 }: ParticleTextEffectProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -151,6 +166,8 @@ export function ParticleTextEffect({
   const particlesRef = useRef<Particle[]>([]);
   const frameCountRef = useRef(0);
   const wordIndexRef = useRef(0);
+  const lastWordChangeFrameRef = useRef(0);
+  const settledAtFrameRef = useRef<number | null>(null);
   const colorIndexRef = useRef(0);
   const mouseRef = useRef({ x: 0, y: 0, isPressed: false, isRightClick: false });
   const sizeRef = useRef({ width: 800, height: 400 });
@@ -271,6 +288,8 @@ export function ParticleTextEffect({
       particlesRef.current = [];
       wordIndexRef.current = 0;
       frameCountRef.current = 0;
+      lastWordChangeFrameRef.current = 0;
+      settledAtFrameRef.current = null;
       nextWord(words[0], canvas);
     };
 
@@ -310,7 +329,24 @@ export function ParticleTextEffect({
       }
 
       frameCountRef.current++;
-      if (frameCountRef.current % wordIntervalFrames === 0) {
+      const framesSinceWord = frameCountRef.current - lastWordChangeFrameRef.current;
+
+      if (
+        settledAtFrameRef.current === null &&
+        framesSinceWord >= 90 &&
+        areParticlesSettled(particles)
+      ) {
+        settledAtFrameRef.current = frameCountRef.current;
+      }
+
+      const holdComplete =
+        settledAtFrameRef.current !== null &&
+        frameCountRef.current - settledAtFrameRef.current >= wordHoldFrames;
+      const maxWaitReached = framesSinceWord >= wordIntervalFrames;
+
+      if (framesSinceWord >= 60 && (holdComplete || maxWaitReached)) {
+        lastWordChangeFrameRef.current = frameCountRef.current;
+        settledAtFrameRef.current = null;
         wordIndexRef.current = (wordIndexRef.current + 1) % words.length;
         nextWord(words[wordIndexRef.current], canvas);
       }
@@ -361,7 +397,7 @@ export function ParticleTextEffect({
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("contextmenu", handleContextMenu);
     };
-  }, [words, wordIntervalFrames, interactive, nextWord, trailColor, fadeColor, drawAsPoints]);
+  }, [words, wordIntervalFrames, wordHoldFrames, interactive, nextWord, trailColor, fadeColor, drawAsPoints]);
 
   return (
     <div ref={containerRef} className={cn("absolute inset-0 w-full h-full", className)}>
