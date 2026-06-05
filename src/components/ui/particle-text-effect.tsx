@@ -26,6 +26,7 @@ class Particle {
   maxForce = 0.08;
   particleSize = 10;
   isKilled = false;
+  isStandby = false;
 
   startColor = { r: 0, g: 0, b: 0 };
   targetColor = { r: 0, g: 0, b: 0 };
@@ -33,6 +34,8 @@ class Particle {
   colorBlendRate = 0.01;
 
   move() {
+    if (this.isStandby) return;
+
     let proximityMult = 1;
     const distance = Math.hypot(this.pos.x - this.target.x, this.pos.y - this.target.y);
 
@@ -73,6 +76,8 @@ class Particle {
   }
 
   draw(ctx: CanvasRenderingContext2D, drawAsPoints: boolean) {
+    if (this.isStandby) return;
+
     if (this.colorWeight < 1.0) {
       this.colorWeight = Math.min(this.colorWeight + this.colorBlendRate, 1.0);
     }
@@ -123,8 +128,49 @@ class Particle {
   }
 }
 
+function getSharedFontSize(canvas: HTMLCanvasElement, words: string[]): number {
+  const maxLen = Math.max(...words.map((w) => w.length), 1);
+  return Math.min(
+    Math.floor(canvas.height * 0.28),
+    Math.floor((canvas.width * 0.88) / Math.max(maxLen * 0.55, 1))
+  );
+}
+
+function getWordPixelCoords(
+  word: string,
+  canvas: HTMLCanvasElement,
+  fontSize: number,
+  pixelSteps: number
+): Vector2D[] {
+  const offscreenCanvas = document.createElement("canvas");
+  offscreenCanvas.width = canvas.width;
+  offscreenCanvas.height = canvas.height;
+  const ctx = offscreenCanvas.getContext("2d");
+  if (!ctx) return [];
+
+  ctx.fillStyle = "white";
+  ctx.font = `700 ${fontSize}px "Fira Sans", ui-sans-serif, sans-serif`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(word, canvas.width / 2, canvas.height / 2);
+
+  const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+  const coords: Vector2D[] = [];
+
+  for (let i = 0; i < pixels.length; i += pixelSteps * 4) {
+    if (pixels[i + 3] > 0) {
+      coords.push({
+        x: (i / 4) % canvas.width,
+        y: Math.floor(i / 4 / canvas.width),
+      });
+    }
+  }
+
+  return coords;
+}
+
 function areParticlesSettled(particles: Particle[], threshold = 0.82): boolean {
-  const active = particles.filter((p) => !p.isKilled);
+  const active = particles.filter((p) => !p.isKilled && !p.isStandby);
   if (active.length === 0) return true;
 
   const settled = active.filter((p) => {
@@ -172,23 +218,11 @@ export function ParticleTextEffect({
   const mouseRef = useRef({ x: 0, y: 0, isPressed: false, isRightClick: false });
   const sizeRef = useRef({ width: 800, height: 400 });
 
-  const pixelSteps = 5;
+  const pixelSteps = 4;
   const drawAsPoints = true;
   const isLight = theme === "light";
   const fadeColor = isLight ? { r: 255, g: 255, b: 255 } : { r: 0, g: 0, b: 0 };
   const trailColor = isLight ? "rgba(255, 255, 255, 0.22)" : "rgba(0, 0, 0, 0.08)";
-
-  const generateRandomPos = useCallback((x: number, y: number, mag: number): Vector2D => {
-    const randomX = Math.random() * 1000;
-    const randomY = Math.random() * 500;
-    const direction = { x: randomX - x, y: randomY - y };
-    const magnitude = Math.hypot(direction.x, direction.y);
-    if (magnitude > 0) {
-      direction.x = (direction.x / magnitude) * mag;
-      direction.y = (direction.y / magnitude) * mag;
-    }
-    return { x: x + direction.x, y: y + direction.y };
-  }, []);
 
   const nextBrandColor = useCallback(() => {
     const color = BRAND_COLORS[colorIndexRef.current % BRAND_COLORS.length];
@@ -196,81 +230,91 @@ export function ParticleTextEffect({
     return color;
   }, []);
 
+  const createParticleNear = useCallback((x: number, y: number): Particle => {
+    const particle = new Particle();
+    const jitter = 70;
+    particle.pos.x = x + (Math.random() - 0.5) * jitter;
+    particle.pos.y = y + (Math.random() - 0.5) * jitter;
+    particle.maxSpeed = Math.random() * 2.5 + 2;
+    particle.maxForce = particle.maxSpeed * 0.04;
+    particle.particleSize = Math.random() * 5 + 4;
+    particle.colorBlendRate = Math.random() * 0.015 + 0.0015;
+    return particle;
+  }, []);
+
+  const parkParticle = useCallback((particle: Particle) => {
+    particle.isKilled = false;
+    particle.isStandby = true;
+    particle.vel.x = 0;
+    particle.vel.y = 0;
+    particle.pos.x = -50;
+    particle.pos.y = -50;
+    particle.target.x = -50;
+    particle.target.y = -50;
+  }, []);
+
   const nextWord = useCallback(
-    (word: string, canvas: HTMLCanvasElement) => {
-      const offscreenCanvas = document.createElement("canvas");
-      offscreenCanvas.width = canvas.width;
-      offscreenCanvas.height = canvas.height;
-      const offscreenCtx = offscreenCanvas.getContext("2d");
-      if (!offscreenCtx) return;
-
-      const fontSize = Math.min(
-        Math.floor(canvas.height * 0.28),
-        Math.floor((canvas.width * 0.88) / Math.max(word.length * 0.55, 1))
-      );
-
-      offscreenCtx.fillStyle = "white";
-      offscreenCtx.font = `700 ${fontSize}px "Fira Sans", ui-sans-serif, sans-serif`;
-      offscreenCtx.textAlign = "center";
-      offscreenCtx.textBaseline = "middle";
-      offscreenCtx.fillText(word, canvas.width / 2, canvas.height / 2);
-
-      const imageData = offscreenCtx.getImageData(0, 0, canvas.width, canvas.height);
-      const pixels = imageData.data;
+    (word: string, canvas: HTMLCanvasElement, fontSize: number) => {
       const newColor = nextBrandColor();
       const particles = particlesRef.current;
-      let particleIndex = 0;
+      const coords = getWordPixelCoords(word, canvas, fontSize, pixelSteps);
 
-      const coordsIndexes: number[] = [];
-      for (let i = 0; i < pixels.length; i += pixelSteps * 4) {
-        coordsIndexes.push(i);
-      }
-
-      for (let i = coordsIndexes.length - 1; i > 0; i--) {
+      for (let i = coords.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [coordsIndexes[i], coordsIndexes[j]] = [coordsIndexes[j], coordsIndexes[i]];
+        [coords[i], coords[j]] = [coords[j], coords[i]];
       }
 
-      for (const coordIndex of coordsIndexes) {
-        const alpha = pixels[coordIndex + 3];
-        if (alpha > 0) {
-          const x = (coordIndex / 4) % canvas.width;
-          const y = Math.floor(coordIndex / 4 / canvas.width);
-
-          let particle: Particle;
-          if (particleIndex < particles.length) {
-            particle = particles[particleIndex];
-            particle.isKilled = false;
-            particleIndex++;
-          } else {
-            particle = new Particle();
-            const randomPos = generateRandomPos(canvas.width / 2, canvas.height / 2, (canvas.width + canvas.height) / 2);
-            particle.pos.x = randomPos.x;
-            particle.pos.y = randomPos.y;
-            particle.maxSpeed = Math.random() * 2.5 + 2;
-            particle.maxForce = particle.maxSpeed * 0.04;
-            particle.particleSize = Math.random() * 5 + 4;
-            particle.colorBlendRate = Math.random() * 0.015 + 0.0015;
-            particles.push(particle);
-          }
-
-          particle.startColor = {
-            r: particle.startColor.r + (particle.targetColor.r - particle.startColor.r) * particle.colorWeight,
-            g: particle.startColor.g + (particle.targetColor.g - particle.startColor.g) * particle.colorWeight,
-            b: particle.startColor.b + (particle.targetColor.b - particle.startColor.b) * particle.colorWeight,
-          };
-          particle.targetColor = newColor;
-          particle.colorWeight = 0;
-          particle.target.x = x;
-          particle.target.y = y;
+      let particleIndex = 0;
+      for (const { x, y } of coords) {
+        let particle: Particle;
+        if (particleIndex < particles.length) {
+          particle = particles[particleIndex];
+          particle.isKilled = false;
+          particle.isStandby = false;
+          particleIndex++;
+        } else {
+          particle = createParticleNear(x, y);
+          particles.push(particle);
         }
+
+        particle.startColor = {
+          r: particle.startColor.r + (particle.targetColor.r - particle.startColor.r) * particle.colorWeight,
+          g: particle.startColor.g + (particle.targetColor.g - particle.startColor.g) * particle.colorWeight,
+          b: particle.startColor.b + (particle.targetColor.b - particle.startColor.b) * particle.colorWeight,
+        };
+        particle.targetColor = newColor;
+        particle.colorWeight = 0;
+        particle.target.x = x;
+        particle.target.y = y;
       }
 
       for (let i = particleIndex; i < particles.length; i++) {
-        particles[i].kill(canvas.width, canvas.height, fadeColor);
+        parkParticle(particles[i]);
       }
     },
-    [fadeColor, generateRandomPos, nextBrandColor]
+    [createParticleNear, nextBrandColor, parkParticle, pixelSteps]
+  );
+
+  const initParticlePool = useCallback(
+    (canvas: HTMLCanvasElement) => {
+      const fontSize = getSharedFontSize(canvas, words);
+      const maxCoords = Math.max(
+        ...words.map((word) => getWordPixelCoords(word, canvas, fontSize, pixelSteps).length),
+        0
+      );
+
+      const particles = particlesRef.current;
+      particles.length = 0;
+
+      for (let i = 0; i < maxCoords; i++) {
+        const standby = createParticleNear(canvas.width / 2, canvas.height / 2);
+        parkParticle(standby);
+        particles.push(standby);
+      }
+
+      return fontSize;
+    },
+    [createParticleNear, parkParticle, pixelSteps, words]
   );
 
   useEffect(() => {
@@ -285,12 +329,12 @@ export function ParticleTextEffect({
       sizeRef.current = { width, height };
       canvas.width = width;
       canvas.height = height;
-      particlesRef.current = [];
       wordIndexRef.current = 0;
       frameCountRef.current = 0;
       lastWordChangeFrameRef.current = 0;
       settledAtFrameRef.current = null;
-      nextWord(words[0], canvas);
+      const fontSize = initParticlePool(canvas);
+      nextWord(words[0], canvas, fontSize);
     };
 
     const animate = () => {
@@ -348,7 +392,8 @@ export function ParticleTextEffect({
         lastWordChangeFrameRef.current = frameCountRef.current;
         settledAtFrameRef.current = null;
         wordIndexRef.current = (wordIndexRef.current + 1) % words.length;
-        nextWord(words[wordIndexRef.current], canvas);
+        const fontSize = getSharedFontSize(canvas, words);
+        nextWord(words[wordIndexRef.current], canvas, fontSize);
       }
 
       animationRef.current = requestAnimationFrame(animate);
@@ -397,7 +442,7 @@ export function ParticleTextEffect({
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("contextmenu", handleContextMenu);
     };
-  }, [words, wordIntervalFrames, wordHoldFrames, interactive, nextWord, trailColor, fadeColor, drawAsPoints]);
+  }, [words, wordIntervalFrames, wordHoldFrames, interactive, initParticlePool, nextWord, trailColor, fadeColor, drawAsPoints]);
 
   return (
     <div ref={containerRef} className={cn("absolute inset-0 w-full h-full", className)}>
